@@ -12,7 +12,27 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+.container {
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .gallery {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  
 }
+
+.gallery-item{
+  
+}
+
+
+

@@ -75,6 +75,8 @@ const imgMarkup = images
           src="${preview}"
           data-source="${original}"
           alt="${description}"
+          width=340
+          height=200
         />
       </a>
     </li>`
@@ -82,3 +84,12 @@ const imgMarkup = images
   .join("");
 
 gallery.insertAdjacentHTML("beforeend", imgMarkup);
+
+gallery.addEventListener("click", handleImgClick);
+
+function handleImgClick(event) {
+  if (event.currentTarget === event.target) {
+    return;
+  }
+  console.log(event.target);
+}
